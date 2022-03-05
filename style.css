@@ -1,0 +1,42 @@
+#title {
+    text-align: center;
+    color: coral;
+    font-family: Roboto, Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+}
+
+div.ComTam {
+    position: absolute;
+    left: 0px;
+    overflow: hidden;
+    font-size: small;
+    background-color:aqua;
+    padding: 10px;
+    border: 10px solid gold;
+    margin: 25px;
+    width: 150px;
+    height: auto;
+    animation-name: shiftRight;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    align-items: center;
+    animation-delay: 1s;
+    justify-content: center;
+}
+p.descText {
+    color:dodgerblue;
+}
+
+body {
+    background-image: url(./pictures/landonSUS.png);
+}
+
+@keyframes shiftRight {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 35px;
+    }
+}
