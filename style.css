@@ -15,10 +15,11 @@ div.ComTam {
     padding: 10px;
     border: 10px solid gold;
     margin: 25px;
-    width: 150px;
+    width: 200px;
     height: auto;
+    opacity: 0;
     animation-name: shiftRight;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-fill-mode:forwards;
     align-items: center;
     animation-delay: 1s;
@@ -28,15 +29,22 @@ p.descText {
     color:dodgerblue;
 }
 
+#leftTitle {
+    text-align: center;
+}
+
+
 body {
-    background-image: url(./pictures/landonSUS.png);
+    background-image: url(https://i0.wp.com/www.csscodelab.com/wp-content/uploads/2019/11/stripe-hero-background-effect-html-css.png?fit=1062%2C631&ssl=1);
 }
 
 @keyframes shiftRight {
     from {
         left: 0px;
+        opacity: 0;
     }
     to {
-        left: 35px;
+        left: 150px;
+        opacity: 1;
     }
 }
