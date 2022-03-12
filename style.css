@@ -18,6 +18,7 @@ div.ComTam {
     width: 200px;
     height: auto;
     opacity: 0;
+    background-image: url("https://s3-media0.fl.yelpcdn.com/bphoto/OTBuh5tAU7na_89HAlHSNA/348s.jpg");
     animation-name: shiftRight;
     animation-duration: 2s;
     animation-fill-mode:forwards;
@@ -26,11 +27,23 @@ div.ComTam {
     justify-content: center;
 }
 p.descText {
-    color:dodgerblue;
+    color: white;
+    font-weight: bold;
 }
 
 #leftTitle {
     text-align: center;
+}
+div.comTamElement {
+    animation-name: textUnHover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+div.comTamElement:hover {
+    animation-name: textAppear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
 }
 
 
@@ -46,5 +59,23 @@ body {
     to {
         left: 150px;
         opacity: 1;
+    }
+}
+
+@keyframes textAppear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes textUnHover {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
 }
